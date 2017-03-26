@@ -8,13 +8,13 @@ if(isset($_GET['txtNombre'])) //se pasaro los valores del form
     {
         $conn = mysqli_connect("localhost","root","") or die ("No fue posible conectarse al servidor de BD");
         mysqli_select_db($conn, "marillac")or die("No fue posible conectar a la BD");
-        $query = "select iduser, name from users where n_user ='" . $_GET['txtNombre'] . "' and pass = '" . $_GET['txtPwd'] . "'";
+        $query = "select iduser, nombre from users where n_user ='" . $_GET['txtNombre'] . "' and pass = '" . $_GET['txtPwd'] . "'";
         $rs = mysqli_query($conn, $query);
         if(mysqli_num_rows($rs) > 0) {
             $datos = mysqli_fetch_object($rs);
             $_SESSION['idU'] = $datos->iduser;
-            $_SESSION['Nombre'] = $datos->name;
-            header("location:http://localhost/Marillac_Web/a_home.php?user=".$datos->name);
+            $_SESSION['Nombre'] = $datos->nombre;
+            header("location:http://localhost/Marillac_Web/a_home.php?user=".$datos->nombre);
         }
         else  {
             $msg = "Los datos usuario/contraseña no son correctos";
