@@ -9,7 +9,7 @@ if($_GET['txtPwd1']!=$_GET['txtPwd2'])
 //se inserta el registro en la BD
 $conection = mysqli_connect("localhost", "root", "") or die ("No es posible conecatar al servidor de BD");
 mysqli_select_db($conection,"marillac") or die ("No fue posible abrir la base de datos");
-$qry = "insert into users(name, dir, tel, edad, n_user, role, pass) values (
+$qry = "insert into users(nombre, direccion, tel, edad, n_user, role, pass) values (
 '" . $_GET['txtNombre'] . "', 
 '" . $_GET['txtDireccion'] ."' ,
 '" . $_GET['txtTelefono'] ."' ,
