@@ -1,0 +1,15 @@
+.main_picture
+{
+    opacity:0.5;
+    position:absolute;
+}
+
+.div_head
+{
+    height: 100px;
+    width: 100px;
+    border: 1px solid red;
+    //background-image: url("img/main_background.jpg");
+    background: url('./main_background.jpg');
+}
+    

@@ -1,0 +1,25 @@
+<?php
+//Verificar la existencia de los valores en el formulario
+if(!isset($_GET['txtNombre']) || !isset($_GET['txtUsuario']) || !isset($_GET['txtPwd1']))
+    header("location:http://localhost//Marillac Web/signup.php?err=1");
+if($_GET["txtNombre"] == "" || $_GET["txtUsuario"] == "" || $_GET['txtPwd1'] == "")
+    header("location:http://localhost/20162017-1/php5/registrar.php?err=2");
+if($_GET['txtPwd1']!=$_GET['txtPwd2'])
+    header("location:http://localhost/20162017-1/php5/registrar.php?err=3");
+//se inserta el registro en la BD
+mysql_connect("localhost","root","") or die ("No es posible conecatar al servidor de BD");
+mysql_select_db("pruebas_tecweb") or die ("No fue posible abrir la base de datos");
+echo $qry = "insert into usuarios (Nombre, Password, Rol, Usuario) values 
+(
+   '" . $_GET['txtNombre'] . "', 
+   '" . $_GET['txtPwd1'] ."' ,
+   'General', 
+   '" . $_GET['txtUsuario'] . "'
+)";
+
+/* Ejecutar la consulta para dar de alta al usuario */
+mysql_query($qry) or die ("No fue posible insertar los datos del usuario. " . mysql_error());
+
+header("location:http://localhost/Marillac_Web/signup.php?err=4");
+?>
+

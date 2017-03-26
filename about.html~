@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>Marillac Nosotros</title>
+	<link rel ="stylesheet" href="css/bootstrap.css">
+	<link rel ="stylesheet" href ="css/about_styles.css"	      
+    </head>
+    <body class="bg-gray">
+	<section class="row sections_text card pagination-centered">
+	    <div class="col-xs-12 col-md-6 col-lg-12">
+		<h1>- Nuestra Misi&#243;n -</h1>
+		<p class="slogan_font">Cambiando vidas por un futuro mejor.</p>
+		<h3>Acerca de Nosotros.</h3>
+		<p>
+		    Marillac es una asociaci&oacute;n sin &aacute;nimos de lucro que busca mejorar las vidas de mujeres<br/>
+		    que han sufrido alguna clase de abuso y que por ende han visto mermadas sus condiciones <br/>
+		    de vida y la calidad de esta. Marillac pretende buscar la mejor soluci&oacute;n para reactivar la vida<br/>
+		    de las mujeres que han sufrido abuso f&iacute;sico y/o psicol&oacute;gico mediante terapia y capacitaci&oacute;n para el<br/>
+		    trabajo de tal manera que puedan volcar su vida en un cambio significativo que lleve a estas mujeres<br/>
+		    a mejorar su calidad de vida de una forma significativa.<br/>
+		    Los ideales de Marillac est &aacute;n motivados por fines altruistas y con una direcci&oacute;n de objetivos con vistas<br/>
+		    a un grado de realizaci&oacute;n en la vida mujeres para que puedan reactivarse activamente y jueguen un papel productivo<br/>
+		    e importante dentro de la sociedad.
+		</p>
+	    </div>
+	</section>	
+	<section class="row sections_text card">
+	    <h1> Nuestro Equipo.</h1><br/><br/>
+	    <div class="col-xs-12 col-sm-4 col-lg-3 sections_text">
+		<img src="./img/instructor1.jpg" class="img-circle img-fluid">
+		<h3>Alberto Ramos</h3>
+		<p>Lic. en Psicologia</p>
+	    </div>
+	    <div class="col-xs-12 col-sm-4 col-lg-3">
+		<img src="./img/instr2.jpg" class="img-circle img-fluid">
+		<h3>Alberto Ramos</h3>
+		<p>Lic. en Psicologia</p>
+	    </div>
+	    <div class="col-xs-12 col-sm-4 col-lg-3">
+		<img src="./img/instr3.jpg" class="img-circle img-fluid">
+		<h3>Alberto Ramos</h3>
+		<p>Lic. en Psicologia</p>
+	    </div>
+	    <div class="col-xs-12 col-sm-4 col-lg-3">
+		<img src="./img/instr4.jpg" class="img-circle img-fluid">
+		<h3>Alberto Ramos</h3>
+		<p>Lic. en Psicologia</p>
+	    </div>
+	    <div class="col-xs-12 col-sm-4 col-lg-3">
+		<img src="./img/instr5.png" class="img-circle img-fluid">
+		<h3>Alberto Ramos</h3>
+		<p>Lic. en Psicologia</p>
+	    </div>
+	    <div class="col-xs-12 col-sm-4 col-lg-3">
+		<img src="./img/INSTR6.jpg" class="img-circle img-fluid">
+		<h3>Alberto Ramos</h3>
+		<p>Lic. en Psicologia</p>
+	    </div>
+	    <div class="col-xs-12 col-sm-4 col-lg-3">
+		<img src="./img/INSTR7.jpg" class="img-circle img-fluid">
+		<h3>Alberto Ramos</h3>
+		<p>Lic. en Psicologia</p>
+	    </div>
+	    <div class="col-xs-12 col-sm-4 col-lg-3">
+		<img src="./img/instr8.jpg" class="img-circle img-fluid">
+		<h3>Alberto Ramos</h3>
+		<p>Lic. en Psicologia</p>
+	    </div>
+	    <div class="col-xs-12 col-sm-4 col-lg-3">
+		<img src="./img/9.jpg" class="img-circle img-fluid">
+		<h3>Alberto Ramos</h3>
+		<p>Lic. en Psicologia</p>
+	    </div>
+	    <div class="col-xs-12 col-sm-4 col-lg-3">
+		<img src="./img/instr10.jpg" class="img-circle img-fluid">
+		<h3>Alberto Ramos</h3>
+		<p>Lic. en Psicologia</p>
+	    </div>
+	    <div class="col-xs-12 col-sm-4 col-lg-3">
+		<img src="./img/instr11.png" class="img-circle img-fluid">
+		<h3>Alberto Ramos</h3>
+		<p>Lic. en Psicologia</p>
+	    </div>
+	    <div class="col-xs-12 col-sm-4 col-lg-3">
+		<img src="./img/instr12.png" class="img-circle img-fluid">
+		<h3>Alberto Ramos</h3>
+		<p>Lic. en Psicologia</p>
+	    </div>
+	</section>
+    </body>
+</html>

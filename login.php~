@@ -1,0 +1,80 @@
+<?php
+session_start();
+$msg = "";
+if(isset($_GET['txtNombre'])) //se pasaro los valores del form
+{
+    //se pasaron ambos valores
+    if($_GET['txtNombre']!="" && $_GET['txtPwd']!="")
+    {
+	//verificar los datos con la BD
+	//conectar con el servidor de BD
+	$conn = mysql_connect("localhost","root","") 
+	or die("No fue posible conectarse al servidor de BD");
+	mysql_select_db("pruebas_tecweb")or die("No fue posible concetar la BD");
+	$rs = mysql_query("Select idUsuario, Nombre from usuarios where Usuario='" . 
+			  $_GET['txtNombre'] . "' and Password='" . $_GET['txtPwd'] . "'") 
+	or die("No fue posible evaluar la consulta sql");
+	//verificar si el usuario dio sus datos correctamente
+	if(mysql_num_rows($rs)>0) //los datos son correctos
+	{
+	    $datos = mysql_fetch_object($rs);
+	    $_SESSION['idU'] = $datos->idUsuario;
+	    $_SESSION['Nombre'] = $datos->Nombre;
+	    header("location:http://localhost/20162017-1/php5/bienvenida.php");
+	}
+	else //los datos son incorrectos
+	{
+	    $msg = "Los datos usuario/contraseña no son correctos";
+	}
+    }
+    else //no se pasaron ambos valores
+    {
+	$msg = "Faltaron datos para la autenticación, usuario/contraseña son necesarios";
+    }
+}
+?>
+
+<!DOCTYPE>
+<html>
+    <head>
+	<title>Login Marillac</title>
+	<link rel ="stylesheet" href="css/bootstrap.css">	
+	<link rel ="stylesheet" href="css/login_styles.css">
+    </head>
+    <body>
+	<!-- This belongs to horizontal bar in top part -->
+	<nav class="navbar navbar-inverse navbar-fixed-top own_bar " role="navigation">
+	    <div class="container">
+		<div class="navbar-header">
+		    <a class="navbar-brand" href="#">Marillac</a>
+		</div>
+	    </div>
+	</nav>
+	<!-- Cl -->
+	<!-- you can substitue the span of reauth email for a input with the email and
+	     include the remember me checkbox-->
+	<div class="container">
+            <div class="card card-container">
+		<h1>Autenticarse</h1><br>
+		<!-- <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" /> -->
+		<p id="profile-name" class="profile-name-card"></p>
+		<form class="form-signin">
+                    <span id="reauth-email" class="reauth-email"></span>
+                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>		    
+                    <!-- <div id="remember" class="checkbox">
+			 <label>
+                         <input type="checkbox" value="remember-me"> Remember me
+			 </label>
+			 </div> -->
+                    <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
+		</form><!-- /form -->
+		<!-- <a href="#" class="forgot-password">
+                     Forgot the password?
+		     </a> -->
+            </div><!-- /card-container -->
+	</div><!-- /container -->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

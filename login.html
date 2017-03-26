@@ -1,0 +1,44 @@
+<!DOCTYPE>
+<html>
+    <head>
+	<title>Login Marillac</title>
+	<link rel ="stylesheet" href="css/bootstrap.css">	
+	<link rel ="stylesheet" href="css/login_styles.css">
+    </head>
+    <body>
+	<!-- This belongs to horizontal bar in top part -->
+	<nav class="navbar navbar-inverse navbar-fixed-top own_bar " role="navigation">
+	    <div class="container">
+		<div class="navbar-header">
+		    <a class="navbar-brand" href="#">Marillac</a>
+		</div>
+	    </div>
+	</nav>
+	<!-- Cl -->
+	<!-- you can substitue the span of reauth email for a input with the email and
+	     include the remember me checkbox-->
+	<div class="container" style="top:5`0%;">
+            <div class="card card-container">
+		<h1>Autenticarse</h1><br>
+		<!-- <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" /> -->
+		<p id="profile-name" class="profile-name-card"></p>
+		<form class="form-signin">
+                    <span id="reauth-email" class="reauth-email"></span>
+                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                    <!-- <div id="remember" class="checkbox">
+			 <label>
+                         <input type="checkbox" value="remember-me"> Remember me
+			 </label>
+			 </div> -->
+                    <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
+		</form><!-- /form -->
+		<!-- <a href="#" class="forgot-password">
+                     Forgot the password?
+		     </a> -->
+            </div><!-- /card-container -->
+	</div><!-- /container -->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
