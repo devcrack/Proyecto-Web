@@ -79,7 +79,7 @@ $name=$_GET['user'];
                         <li> <a data-toggle="tab" href="#Dar_Baja_Us"> <span class="glyphicon glyphicon-floppy-remove"> </span> </a> </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="./login.php"><span class="glyphicon glyphicon-log-out"></span> Salir </a></li>
+                        <li><a href="php/login.php"><span class="glyphicon glyphicon-log-out"></span> Salir </a></li>
                     </ul>
                 </div><!-- navbar-collapse -->
             </div>
