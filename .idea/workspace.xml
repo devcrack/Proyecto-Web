@@ -395,7 +395,7 @@
       <workItem from="1490542809660" duration="666000" />
       <workItem from="1490543481893" duration="3061000" />
       <workItem from="1490554461393" duration="7021000" />
-      <workItem from="1490575134663" duration="12132000" />
+      <workItem from="1490575134663" duration="12149000" />
     </task>
     <task id="LOCAL-00001" summary="Ajustando Cambios en la consulta por los cambios hechos en la base de datos.">
       <created>1490544408757</created>
@@ -474,11 +474,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490598999203</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Esta mamada es del IDE">
+      <created>1490599015314</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1490599015314</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88164000" />
+    <option name="totallyTimeSpent" value="88181000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -537,7 +544,8 @@
     <MESSAGE value="Se cambio al directorio de los HTML'S" />
     <MESSAGE value="Aqui pue tambien sepa la chingada" />
     <MESSAGE value="Se actualizo la pantalla de inicio de sesion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se actualizo la pantalla de inicio de sesion" />
+    <MESSAGE value="Esta mamada es del IDE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Esta mamada es del IDE" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
