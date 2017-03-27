@@ -42,7 +42,7 @@ $name=$_GET['user'];
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li> <a href="update_profile_user.php?user=<?php echo $name." glyphicon glyphicon-user"></span> </a> </li>
+                <li> <a href="update_profile_user.php?user=<?php echo $name."\""?>> glyphicon glyphicon-user"></span> </a> </li>
                 <li> <a  onclick="user_modification()" href="#" > <span class="glyphicon glyphicon-cog"> </span> </a> </li>
                 <li> <a data-toggle="tab" href="#Dar_Alta_Us"> <span class="glyphicon glyphicon-floppy-saved"> </span>  </a> </li>
                 <li> <a data-toggle="tab" href="#Dar_Baja_Us"> <span class="glyphicon glyphicon-floppy-remove"> </span> </a> </li>
