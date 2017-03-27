@@ -45,7 +45,7 @@ if(isset($_GET['err']))
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		    <ul class="nav navbar-nav navbar-right">
 			<li><a href="signup.php"><span class="glyphicon glyphicon-home"> REGRESAR</span></a></li>
-			<li><a href="./login.php"><span class="glyphicon glyphicon-log-in"></span> Entrar</a></li>
+			<li><a href="php/login.php"><span class="glyphicon glyphicon-log-in"></span> Entrar</a></li>
 		    </ul>
 		</div>
 	    </div>
