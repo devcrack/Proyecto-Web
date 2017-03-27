@@ -14,7 +14,7 @@ if(isset($_GET['txtNombre'])) //se pasaro los valores del form
             $datos = mysqli_fetch_object($rs);
             $_SESSION['idU'] = $datos->iduser;
             $_SESSION['Nombre'] = $datos->nombre;
-            header("location:http://localhost/Marillac_Web/a_home.php?user=".$datos->nombre);
+            header("location:http://localhost/Marillac_Web/php/home_user.php?user=".$datos->nombre);
         }
         else  {
             $msg = "Los datos usuario/contraseña no son correctos";
@@ -31,8 +31,8 @@ if(isset($_GET['txtNombre'])) //se pasaro los valores del form
 <html>
 <head>
         <title>Login Marillac</title>
-        <link rel ="stylesheet" href="css/bootstrap.css">
-        <link rel ="stylesheet" href="css/login_styles.css">
+        <link rel ="stylesheet" href="../css/bootstrap.css">
+        <link rel ="stylesheet" href="../css/login_styles.css">
 </head>
 <body>
     <!-- This belongs to horizontal bar in top part -->
@@ -49,28 +49,17 @@ if(isset($_GET['txtNombre'])) //se pasaro los valores del form
     <div class="container">
         <div class="card card-container">
             <h1>Autenticarse</h1><br>
-            <!-- <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" /> -->
             <p id="profile-name" class="profile-name-card"></p>
             <form class="form-signin">
                 <span id="reauth-email" class="reauth-email"></span>
-<!--                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>-->
                 <input type="text"  class="form-control " placeholder="Usuario" required autofocus name ="txtNombre">
                 <input type="password"  class="form-control" placeholder="Contraseña" required autofocus name="txtPwd">
-<!--                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>-->
-                <!-- <div id="remember" class="checkbox">
-			 <label>
-                         <input type="checkbox" value="remember-me"> Remember me
-			 </label>
-			 </div> -->
                 <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
-                <a href="index.html"><span class="glyphicon glyphicon-home" style="color:rgb(255, 145, 162);"> REGRESAR</span></a>
+                <a href="../index.html"><span class="glyphicon glyphicon-home" style="color:rgb(255, 145, 162);"> REGRESAR</span></a>
             </form><!-- /form -->
-		<!-- <a href="#" class="forgot-password">
-                     Forgot the password?
-		     </a> -->
         </div><!-- /card-container -->
     </div><!-- /container -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
