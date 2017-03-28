@@ -42,13 +42,13 @@ $name=$_GET['user'];
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li> <a href="update_profile_user.php?user=<?php echo $name."\""?>> glyphicon glyphicon-user"></span> </a> </li>
-                <li> <a  onclick="user_modification()" href="#" > <span class="glyphicon glyphicon-cog"> </span> </a> </li>
-                <li> <a data-toggle="tab" href="#Dar_Alta_Us"> <span class="glyphicon glyphicon-floppy-saved"> </span>  </a> </li>
+                <li> <a href= "backend/load_profile_user.php?user=<?php echo $name."\""?>> <span class = "glyphicon glyphicon-user"></span> </a> </li>
+                <li> <a  href="./backend/load_update_user.php?user=<?php echo $name."\""?> > <span class="glyphicon glyphicon-cog"> </span> </a> </li>
+                <li> <a  href="#"> <span class="glyphicon glyphicon-floppy-saved"> </span>  </a> </li>
                 <li> <a data-toggle="tab" href="#Dar_Baja_Us"> <span class="glyphicon glyphicon-floppy-remove"> </span> </a> </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="./login.php"><span class="glyphicon glyphicon-log-out tags-color"></span> Salir </a></li>
+                <li><a href="login.php"><span class="glyphicon glyphicon-log-out tags-color"></span> Salir </a></li>
             </ul>
         </div><!-- navbar-collapse -->
     </div>
