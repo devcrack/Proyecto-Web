@@ -32,8 +32,8 @@ if(isset($_GET['err']))
 <html>
     <head>
 	<title>Login Marillac</title>
-	<link rel ="stylesheet" href="css/bootstrap.css">	
-	<link rel ="stylesheet" href="css/login_styles.css">
+	<link rel ="stylesheet" href="../css/bootstrap.css">
+	<link rel ="stylesheet" href="../css/login_styles.css">
     </head>
     <body>
 	<!-- This belongs to horizontal bar in top part -->
@@ -45,7 +45,7 @@ if(isset($_GET['err']))
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		    <ul class="nav navbar-nav navbar-right">
 			<li><a href="signup.php"><span class="glyphicon glyphicon-home"> REGRESAR</span></a></li>
-			<li><a href="php/login.php"><span class="glyphicon glyphicon-log-in"></span> Entrar</a></li>
+			<li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Entrar</a></li>
 		    </ul>
 		</div>
 	    </div>
@@ -58,7 +58,7 @@ if(isset($_GET['err']))
 		<h1>Darse de Alta</h1><br>
 		<!-- <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" /> -->
 		<p id="profile-name" class="profile-name-card"></p>
-		<form class="form-signin" method="get" action="signup_backend.php">
+		<form class="form-signin" method="get" action="backend/signup_backend.php">
                     <span id="reauth-email" class="reauth-email"></span>
 		    <div class ="row">
 			<div class ="col-xs-12">
@@ -79,13 +79,13 @@ if(isset($_GET['err']))
 		    <input type="password"  class="form-control" placeholder="Confirmar la Contraseña" required autofocus name="txtPwd2">
 		    <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Darse de Alta</button>
 		</form>
-		<a href="index.html"><span class="glyphicon glyphicon-home" style="color:rgb(255, 145, 162);"> REGRESAR</span></a>
+		<a href="../index.html"><span class="glyphicon glyphicon-home" style="color:rgb(255, 145, 162);"> REGRESAR</span></a>
             </div>
 	</div>
 	<?php
 	if($msg!="") echo "<p>$msg</p>";
 	?>
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="../js/jquery.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
     </body>
 </html>
