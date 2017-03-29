@@ -28,8 +28,6 @@ $qry = "insert into users(nombre, direccion, tel, edad, n_user, role, pass) valu
 //mysql_query($qry) or die ("No fue posible insertar los datos del usuario. " . mysql_error());
 mysqli_query($conection,$qry);// or die ("No fue posible insertar los datos del usuario. " . mysql_error());
 
-
-
-header("location:http://localhost/Marillac_Web/signup.php?err=4");
+header("location:http://localhost/Marillac_Web/php/home_user.php?user=".$_GET['txtNombre']);
 ?>
 
